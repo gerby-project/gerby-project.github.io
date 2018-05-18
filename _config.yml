@@ -21,7 +21,4 @@ github_username:  gerby-project
 
 # Build settings
 markdown: kramdown
-theme: tactile
-exclude:
-  - Gemfile
-  - Gemfile.lock
+theme: jekyll-theme-tactile
