@@ -23,19 +23,21 @@ A *tag* is a short identifier (usually four symbols long, e.g. `02DX`), that is 
 
 Anything in your document which has a number (sections, theorems, equations, ...) needs to have a label associated to it in your LaTeX code, and then in a separate file (the tags file) you set up a dictionary between labels and tags. This file looks like
 
-   0000,first-definition
-   0001,first-lemma
-   0002,second-lemma
-   0003,second-definition
-   0004,second-lemma
-   0005,main-theorem
+```
+0000,first-definition
+0001,first-lemma
+0002,second-lemma
+0003,second-definition
+0004,second-lemma
+0005,main-theorem
+```
 
 albeit it much longer probably.
 
 At this point you only have a LaTeX document, and a tags file. These are all the ingredients you need for the next step.
 
 ### Online view
-When everything has been assigned a tag, Gerby will convert your LaTeX document into small HTML files, one for each tag. We then import these into the database, which in turn is used by a [Flask](https://flask.pocoo.org) website. This way you get
+When everything has been assigned a tag, Gerby will convert your LaTeX document into small HTML files, one for each tag. We then import these into the database, which in turn is used by a [Flask](http://flask.pocoo.org) website. This way you get
 
 * a page for every tag
 * easy navigation around your document
@@ -69,7 +71,7 @@ The result of each step is
 2. an SQLite3 database containing the output of step 1, together with all the metadata
 3. a local web server that serves your Gerby instance
 
-The following detailed instructions allow you to run a local copy of the Stacks project website. Currently the website code is tailored towards this, but one can modify the Jinja2 templates for your own project. The instructions are based on the [continuous integration code for Gerby](TODO), and a possibly more up-to-date version of the instructions can be extracted from that Makefile.
+The following detailed instructions allow you to run a local copy of the Stacks project website. Currently the website code is tailored towards this, but one can modify the Jinja2 templates for your own project. The instructions are based on the [continuous integration code for Gerby](https://github.com/gerby-project/gerby-website/blob/master/.travis.yml), and a possibly more up-to-date version of the instructions can be extracted from that Makefile.
 
 We are in the process of making the code more generic, please get in touch if you are interested in running your own instance.
 
@@ -132,3 +134,5 @@ Having done all this, running the website should be easy. This is assuming you h
 
 1. `export FLASK_APP=gerby`
 2. `flask run`
+
+Now you have a website which you can access via `localhost:5000`.
