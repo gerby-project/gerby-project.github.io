@@ -136,3 +136,9 @@ Having done all this, running the website should be easy. This is assuming you h
 2. `flask run`
 
 Now you have a website which you can access via `localhost:5000`.
+
+## Contributors
+
+* [Pieter Belmans](http://pbelmans.ncag.info)
+* [Raymond Cheng](http://chngr.github.io/)
+* [Johan de Jong](http://www.math.columbia.edu/~dejong/)
