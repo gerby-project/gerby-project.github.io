@@ -2,6 +2,8 @@
 layout: default
 ---
 
+# Gerby
+
 ## Introduction
 If you have a LaTeX document which
 
@@ -16,6 +18,8 @@ you will run into the problem that
 3. the internal numbering changes often, making external references outdated
 
 Gerby addresses these problems by providing an **online tag-based view**, instead of just having a big PDF. Gerby is tailored towards making large online textbooks and reference works more accessible.
+
+In case you were wondering, a [*gerbe*](https://en.wikipedia.org/wiki/Gerbe) is a kind of [stack](https://en.wikipedia.org/wiki/Stack_(mathematics)) (in the mathematical sense), and the software was originally meant for the [Stacks project](https://stacks.math.columbia.edu).
 
 
 ### Tags
@@ -78,7 +82,7 @@ We are in the process of making the code more generic, please get in touch if yo
 ### plasTeX
 First you need to install a modified version of [plasTeX](https://github.com/tiarno/plastex). We assume that you are using Python 3 by default, change accordingly if that is not the case. Perform the following in the location where you want to install plasTeX:
 
-1. `git clone https://github.com/pbelmans/plastex.git`
+1. `git clone https://github.com/gerby-project/plastex.git`
 2. `cd plastex`
 3. `git checkout gerby`
 4. `pip install .`
@@ -106,7 +110,7 @@ If all went well, you now have a directory called `WEB/book/` containing several
 ### Importing tags
 The next step is to install Gerby, and import the result from the previous step into the database.
 
-1. `git clone https://github.com/pbelmans/gerby-website.git`
+1. `git clone https://github.com/gerby-project/gerby-website.git`
 2. `cd gerby-website/gerby/static`
 3. `git clone https://github.com/aexmachina/jquery-bonsai`
 4. `cp jquery-bonsai/jquery.bonsai.css css/`
