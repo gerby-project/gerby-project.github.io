@@ -78,25 +78,25 @@ We are in the process of making the code more generic, please get in touch if yo
 
 
 ## Hello world
-In [https://github.com/gerby-project/hello-world](`gerby-project/hello-world`) we have collected a _minimal working example_ of what it means to use Gerby and plasTeX for your own project.
+In [`gerby-project/hello-world`](https://github.com/gerby-project/hello-world) we have collected a _minimal working example_ of what it means to use Gerby and plasTeX for your own project.
 
 The main files here are:
 
-* [https://github.com/gerby-project/hello-world/blob/master/document.tex](`document.tex`) contains a minimal LaTeX document, with labels
-* [https://github.com/gerby-project/hello-world/blob/master/tagger.py](`tagger.py`) is an example script to automate the tag assignment
-* [https://github.com/gerby-project/hello-world/blob/master/configuration.py](`configuration.py`) is the Gerby configuration file for our example project
+* [`document.tex`](https://github.com/gerby-project/hello-world/blob/master/document.tex) contains a minimal LaTeX document, with labels
+* [`tagger.py`](https://github.com/gerby-project/hello-world/blob/master/tagger.py) is an example script to automate the tag assignment
+* [`configuration.py`](https://github.com/gerby-project/hello-world/blob/master/configuration.py) is the Gerby configuration file for our example project
 
-and most importantly [https://github.com/gerby-project/hello-world/blob/master/.travis.yml](`.travis.yml`) contains all the steps that are needed to setup the system. This script is run automatically on a virtual server, so all steps are guaranteed to work (provided your configuration approximates that of the virtual server).
+and most importantly [`.travis.yml`](https://github.com/gerby-project/hello-world/blob/master/.travis.yml) contains all the steps that are needed to setup the system. This script is run automatically on a virtual server, so all steps are guaranteed to work (provided your configuration approximates that of the virtual server).
 
 Some remarks:
 
 * the file `document.tex` cannot be built by `pdflatex`: we have to remove the `amsthm` package
 * similarly other packages might break plasTeX, so you should keep your packages as vanilla as possible, and work with custom preambles
 
-The file [https://github.com/gerby-project/hello-world/blob/master/.travis.yml](`.travis.yml`) should be self-explanatory, as it lists the shell commands one needs to execute to set up everything. The subtle steps are probably step 4 and 5 of the installation. One way of avoiding this is by using full paths in the configuration file.
+The file [`.travis.yml`](https://github.com/gerby-project/hello-world/blob/master/.travis.yml) should be self-explanatory, as it lists the shell commands one needs to execute to set up everything. The subtle steps are probably step 4 and 5 of the installation. One way of avoiding this is by using full paths in the configuration file.
 
 
-If you are more ambitious, you can also set up the Stacks project, [/stacks-instructions](following some more elaborate instructions).
+If you are more ambitious, you can also set up the Stacks project, [following some more elaborate instructions](/stacks-instructions).
 
 
 ## Contributors
