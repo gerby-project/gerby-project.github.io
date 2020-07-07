@@ -4,7 +4,7 @@ layout: default
 
 # Gerby
 
-[The Gerby project](https://gerby-project.github.io/)
+[The Gerby project](https://github.com/gerby-project)
 
 ## Introduction
 If you have a LaTeX document which
